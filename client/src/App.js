@@ -1,6 +1,6 @@
 import React from "react";
-import BookSearch from './pages/BookSearch/BookSearch';
-import SavedBooks from './pages/SavedBooks/SavedBooks';
+import BookSearch from './Pages/BookSearch/BookSearch';
+import SavedBooks from './Pages/SavedBooks/SavedBooks';
 import {
   BrowserRouter as Router,
   Switch,

@@ -8,6 +8,8 @@ return (
     <div>Title: {bookToDisplay.title}</div>
     <div>Author(s): {bookToDisplay.authors.join(', ')}</div>
     <div>Description: {bookToDisplay.description}</div>
+    <div>Image: {bookToDisplay.image} </div>
+    <div>Link: {bookToDisplay.link} </div>
 </div>
 );
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-import Book from '../../components/Book/Book';
+import Book from '../../Components/Book/Book';
 
 class SavedBooks extends Component {
 

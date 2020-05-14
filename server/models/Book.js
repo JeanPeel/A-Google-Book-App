@@ -1,14 +1,12 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var BookSchema = new Schema({
+var bookListSchema = new Schema({
 title: String,
-authors: [
-{
-    type: String
-}
-],
-description: String
+authors: Array,
+description: String,
+image: String,
+link: String
 });
 
-var Book = mongoose.model('Book', BookSchema);
-module.exports = Book;
+const bookList = mongoose.model('bookList', bookListSchema);
+module.exports = bookList;

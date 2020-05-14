@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Book from '../../components/Book/Book';
+import Book from '../../Components/Book/Book';
 
 import axios from 'axios';
 
