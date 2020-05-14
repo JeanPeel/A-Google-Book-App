@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./SearchBar.css";
+// import Book from '../../Components/Book/Book';
 
 class SearchBar extends Component {
   render() {
@@ -12,7 +13,13 @@ class SearchBar extends Component {
             <label htmlFor="searchBar" className="mr-1">
               Search Books by Title
             </label>
-            <input type="text" className="form-control" id="searchBar"></input>
+            <input 
+            type="text" 
+            className="form-control" 
+            id="searchBar"  
+            placeholder="Type here, click button, get search results"
+            >
+            </input>
           </div>
           <button type="submit" className="btn btn-dark">
             Search

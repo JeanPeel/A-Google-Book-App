@@ -5,7 +5,9 @@ const app = express();
 
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb://localhost/Pets", { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost/googleBooks", { 
+  useNewUrlParser: true 
+});
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -15,7 +17,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-// Define API routes here
+
 
 
 // Send every other request to the React app
