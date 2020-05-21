@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 
-var BookSchema = new Schema({
+var BookSchema = new mongoose.Schema({
     title: String,
     authors: Array,
     description: String,
@@ -10,5 +10,5 @@ var BookSchema = new Schema({
     link: String
 });
 
-const BookList = mongoose.model('bookList', BookSchema);
-module.exports = BookList;
+const Book = mongoose.model('bookList', BookSchema);
+module.exports = Book;

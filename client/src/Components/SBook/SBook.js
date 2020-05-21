@@ -23,7 +23,7 @@ export default function SBook(props) {
                 <h5>{SBookToDisplay.authors.join(', ')}</h5>
             </div>
             <div class='bkdescrip'>
-            <img class="bookimg" src={SBookToDisplay.mage}></img>
+            <img class="bookimg" src={SBookToDisplay.mage} alt=''></img>
             {SBookToDisplay.description}
             </div>
         </div>
