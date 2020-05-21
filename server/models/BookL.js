@@ -1,8 +1,8 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-import "./Book.css";
 
-var bookListSchema = new Schema({
+
+var BookSchema = new Schema({
     title: String,
     authors: Array,
     description: String,
@@ -10,5 +10,5 @@ var bookListSchema = new Schema({
     link: String
 });
 
-const bookList = mongoose.model('bookList', bookListSchema);
-module.exports = bookList;
+const BookList = mongoose.model('bookList', BookSchema);
+module.exports = BookList;

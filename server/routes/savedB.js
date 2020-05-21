@@ -1,8 +1,8 @@
-const Book = require('../models/Book');
+const BookL = require('../models/BookL');
 
-function savedBooks(app) {
+function savedB(app) {
 
-app.get('/api/savedBooks', function(request, response) {
+app.get('/api/savedB', function(request, response) {
 Book.find({})
     .then(function(data) {
     response.json(data);
@@ -18,4 +18,4 @@ Book.find({})
 
 }
 
-module.exports = savedBooks;
+module.exports = savedB;
