@@ -6,11 +6,11 @@ class SearchBar extends Component {
   render() {
     return (
       <div className="container">
-        <form className="mt-2 p-2 border border-dark bg-light">
+        <form >
           <div className="form-group">
             <h1>Find a Book to Explore!</h1>
             <hr />
-            <label htmlFor="searchBar" className="mr-1">
+            <label htmlFor="searchBar" >
               Search Books by Title
             </label>
             <input 

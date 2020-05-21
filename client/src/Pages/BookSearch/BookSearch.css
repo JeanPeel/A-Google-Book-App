@@ -1,0 +1,32 @@
+.searchstyle {
+    font-family: 'Noto Sans JP', sans-serif;
+    border: 2px solid #343a40;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.form-group {
+    padding: 20px 20px 0px 20px;
+}
+
+h1 {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    
+}
+
+input {
+    width: 100%
+}
+
+label {
+    padding: 0px 20px 20px 20px;
+}
+
+
+.btnset {
+    position: relative;
+    left: 60%
+}

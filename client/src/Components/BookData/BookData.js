@@ -1,7 +1,7 @@
 import React from 'react';
-import "./Book.css";
+import "./BookData.css";
 
-export default function Book(props) {
+export default function BookData(props) {
     const bookToDisplay = props.bookToDisplay;
 
     return (
@@ -15,7 +15,7 @@ export default function Book(props) {
                 <button
                     className="btn btn-dark btnstyle2"
                 >
-                    Save
+                    Delete
                 </button>
             </div>
             <div class='bookhead'>

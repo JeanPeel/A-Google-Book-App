@@ -1,43 +1,76 @@
-import React from "react";
-// import Book from './Components/Book/Book';
+import React, { Component } from "react";
 import Jumbotron from './Components/Jumbotron/Jumbotron';
-import Navbar from './Components/Navbar/Navbar.js';
-import SearchBar from './Components/SearchBar/SearchBar';
 import BookSearch from './Pages/BookSearch/BookSearch';
 import SavedBooks from './Pages/SavedBooks/SavedBooks';
+import "./Components/SavedStyle/SavedStyle.css";
+
 
 import {
-BrowserRouter as Router,
-Switch,
-Route,
-Link
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
 } from 'react-router-dom';
 
 function SavedApp() {
 return (
-<Router>
+    <Router>
+        <nav className="navbar navbar-dark bg-dark navbar-expand-lg navstyle">
+        <span className="navbar-brand mb-0 h1">Google Books</span>
 
-    <Navbar />
-    <ul>
-    <li><Link to="/index.js">Back to Book Search</Link></li>
-    <li><Link to="/saved.js">Saved Books</Link></li>
-    </ul>
+        <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle Navigation"
+        ></button>
 
-    <Jumbotron />
+        <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+            <li className="nav-item active">
+                <Link to="/">
+                <button
+                    className="nav-item btn btn-outline-light mb-0 mr-3"
+                >
 
-    <div>
+                    Search <span className="sr-only">(current)</span>
+                </button>
+                </Link>
+            </li>
+            <li className="nav-item">
+                <Link to="/saved">
+                <button
+                    className="nav-item btn btn-outline-light mb-0 text-white"
+                >
+                    Saved
+            </button>
+                </Link>
+            </li>
+            </ul>
+
+        </div>
+        </nav>
+
+        <div class='centered'>
+        <Jumbotron />
+
+    </div>
+
+
+    <div class='centered'>
     <Switch>
         <Route exact path="/">
         <BookSearch />
-        <SearchBar />
+
         </Route>
         <Route path="/saved">
         <SavedBooks />
         </Route>
     </Switch>
     </div>
-
-    <div>This is the saved page</div> 
 </Router>
 );
 }

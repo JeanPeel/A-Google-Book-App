@@ -1,0 +1,9 @@
+.navstyle {
+    padding-left: 12%
+}
+
+.centered {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}

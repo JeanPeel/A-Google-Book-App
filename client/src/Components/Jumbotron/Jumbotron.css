@@ -1,9 +1,13 @@
 .jumbotron {
     font-family: 'Noto Sans JP', sans-serif;
-    background-image: url(https://i.imgur.com/XFCrR7K.jpg);
+    background-image: url('../../assets/images/bookSearch4.gif');
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: auto;
-    opacity: 0.7;
+    z-index: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    border: 2px solid #343a40;
 }
+
 
