@@ -4,10 +4,10 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 const mongoose = require('mongoose');
 
-const Book = require("./models/BookL");
+const Book = require("./server/models/BookL");
 
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=false", { 
+mongoose.connect("mongodb://localhost:27017/googleBooks", { 
   useNewUrlParser: true 
 });
 
@@ -15,7 +15,7 @@ mongoose.connect("mongodb://localhost:27017/?readPreference=primary&appname=Mong
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Serve up static assets (usually on heroku)
+// Serve up static assets (usually on heroku)https://github.com/JeanPeel/A-Google-Book-App
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
@@ -46,6 +46,7 @@ app.delete("*", (request, response) => {
 
 app.post("*", (request, response) => {
   const bookData = request.body;
+  console.log(bookData)
   Book.create(bookData)
   .then(function () {
     response.status(200).end();
