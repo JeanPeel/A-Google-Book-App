@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const Book = require("./models/BookL");
 
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost/googleBooks", { 
+mongoose.connect("mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=false", { 
   useNewUrlParser: true 
 });
 
@@ -31,7 +31,7 @@ app.get("*", (request, response) => {
     });
 });
 
-app.delete("*", (request, respponse) => {
+app.delete("*", (request, response) => {
   const mongoID = request.params.id;
   Book.remove({
     _id: mongoID,
