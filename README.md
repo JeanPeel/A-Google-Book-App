@@ -10,6 +10,7 @@ This App uses an AJAX call to pull in Google Books based on the search terms typ
 * Tech Used
 * Details of App and Challenges
 * Link to the Live Project
+* Prerequisites
 
 ## Application Use
 The app is a single page React Application. The user lands on a simple search page, with base level instructions, and a search bar with a submit button. The user enters in book info they wish to search for and utilizing the Google Books API, we query the Google Books app for info, and render the results on the screen for the user to peruse.
@@ -47,6 +48,10 @@ The app has some extra pages and components, that did not end up geting used in 
 * Chris Stead -  *Trouble Shooting Help* - [CMStead](https://github.com/cmstead)
 * Kurt Lehnardt -  *Trouble Shooting Help* - [KurtLehnardt](https://github.com/KurtLehnardt)
 * Mike Rivera -  *Trouble Shooting Help* - [DevMike42](https://github.com/DevMike42)
+
+## Link to the Live Project on Heroku will be posted here after it is hosted...
+
+## Link to GitHub code Repository: https://github.com/JeanPeel/A-Google-Book-App
 
 ### Prerequisites
 
