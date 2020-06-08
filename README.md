@@ -40,7 +40,13 @@ The app has some extra pages and components, that did not end up geting used in 
 
 ### Hat tips tp...
 
-* Brian Allen -  *He made a similar App that I modeled this project after.* - [Darkthistle982](https://github.com/Darkthistle982)
+* Brian Allen -  *He made a similar App that I modeled this project after.* - [DarkThistle982](https://github.com/Darkthistle982)
+
+### Thanks go to the Teacher and Teachers Aids of our bootcamp in helping us trouble shoot the different callenges we faced.
+
+* Chris Stead -  *Trouble Shooting Help* - [CMStead](https://github.com/cmstead)
+* Kurt Lehnardt -  *Trouble Shooting Help* - [KurtLehnardt](https://github.com/KurtLehnardt)
+* Mike Rivera -  *Trouble Shooting Help* - [DevMike42](https://github.com/DevMike42)
 
 ### Prerequisites
 
