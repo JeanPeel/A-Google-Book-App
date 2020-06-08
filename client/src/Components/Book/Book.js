@@ -31,7 +31,7 @@ export default function Book(props) {
             </div>
             <div class='bookhead'>
                 <h3>{bookToDisplay.title}</h3>
-                <h5>{bookToDisplay.authors.join(', ')}</h5>
+                <h5>{bookToDisplay.authors}</h5>
             </div>
             <div class='bkdescrip'>
             <img class="bookimg" src={bookToDisplay.image} alt=''></img>
