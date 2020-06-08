@@ -1,4 +1,5 @@
 # Google Book Search
+
 A full stack React app to search the Google Books Api, and save links to ones you are interested in. 
 
 ## About this project
@@ -13,6 +14,7 @@ This App uses an AJAX call to pull in Google Books based on the search terms typ
 * Prerequisites
 
 ## Application Use
+
 The app is a single page React Application. The user lands on a simple search page, with base level instructions, and a search bar with a submit button. The user enters in book info they wish to search for and utilizing the Google Books API, we query the Google Books app for info, and render the results on the screen for the user to peruse.
 
 The results also have a save button in them, allowing the user to save books they are interested in, which are saved to the MongoDB for retrieval. By using the navigation bar, the user can move to the Saved page, which displays all saved books from the database. They have an option to delete books from the database from this page.
@@ -29,6 +31,7 @@ The results also have a save button in them, allowing the user to save books the
 * React-Alert
 
 ## Details of App and Challenges
+
 When the final push of coding was made the App was saving to the database on my computer.  The Teachers Aid grading this app reported that the app did not save books on his computer.  The app would need to be trouble shooted to resolve this.
 
 The app has some extra pages and components, that did not end up geting used in the app.  The app could use some clean up of extra items.
